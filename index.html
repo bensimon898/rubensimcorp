@@ -62,5 +62,28 @@ body {
       </section>
     </div>
   </header>
+  <div id="intro"></div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+    var options = {
+        id: 324720100,
+        width: 360,
+        loop: true,
+		autoplay: true,
+		dnt: true,
+		title: false,
+		muted: true,
+		byline: false,
+    };
+
+    var player = new Vimeo.Player('intro', options);
+
+    player.setVolume(0);
+
+    player.on('play', function() {
+        console.log('played intro video');
+    });
+</script>
 </body>
 </html>
