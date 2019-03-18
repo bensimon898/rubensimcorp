@@ -1,6 +1,6 @@
 @font-face {
   font-family: BebasNeue;
-  src: url('BebasNeue-Regular.ttf');
+  src: url('Roboto-Medium.ttf');
   }
   
 ::-webkit-scrollbar { 
@@ -15,8 +15,17 @@ body {
   margin: 0;
 }
 h1 {
- 
+ line-height: 0;
 }
+h3 {
+	margin: 0
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
 #header-container {
 }
 
@@ -67,10 +76,16 @@ border-style: solid;
 border-width: 1px 0 0 0;
 }
 
+.sectionContent {
+	width: 320px;
+}
+
 #section1 {
   height: 487px;
   background-position: center;
   background-size: cover;
+  background-image: url("drone.jpg");
+  padding: 20px 20px 20px 20px; 
 }
 
 #section2 {
@@ -91,10 +106,46 @@ border-width: 1px 0 0 0;
   border-style: solid;
 }
 
-#videos {
+#section4 {
   height: 487px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(".jpg");
+  border-width: 1px 0 0 0;
+  border-style: solid;
+}
+
+#videos {
+  height: 400px;
   border-width: 1px 0 0 0;
   background-size: cover;
   background-image: url("videos.jpg");
+  background-position: center;
   border-style: solid;
+  padding: 20px 20px 20px 20px;
 }
+
+.videoContainer {
+	height: 90px;
+		
+}
+.thumbnail {
+	width: 160px;
+	height: 90px;
+	display: inline-block;
+
+}
+.videoInfo {
+	display: inline-block;
+	height: 90px;
+	width: 154px;
+	line-height: 20px;
+	font-size: 0.8em;
+	position: absolute;
+}
+
+.videoInfo p {
+    margin: 16px 0 0 10px;
+    height: 100%;
+}
+
