@@ -14,7 +14,9 @@ body {
   background-color: black;
   margin: 0;
 }
-
+h1 {
+ 
+}
 #header-container {
 }
 
@@ -86,5 +88,13 @@ border-width: 1px 0 0 0;
   background-size: cover;
   background-image: url("drone3.jpg");
   border-width: 1px 0 0 0;
+  border-style: solid;
+}
+
+#videos {
+  height: 487px;
+  border-width: 1px 0 0 0;
+  background-size: cover;
+  background-image: url("videos.jpg");
   border-style: solid;
 }
