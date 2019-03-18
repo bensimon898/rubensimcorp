@@ -47,9 +47,9 @@ body {
 }  
 
 #intro {
-  left: 50%;
   padding-top: 50;
   overflow: hidden;
+  max-height: 1000px;
 }
 
 #content {

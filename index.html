@@ -28,10 +28,14 @@
     var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
     if (w < 800) {
 	  var length = 800;
-	  var m = (800 - w) / -2
+	  var m = (800 - w) / -2 ;
 	  document.getElementById("intro").style.margin ="0 0 0 " + m.toString() + "px";
 	} else {
 	var length = w;
+	};
+	if (w > 1364){
+	var m = (1364 - w) / -600 ;
+	document.getElementById("intro").style.padding = m.toString() + "px 0 0 0";
 	};
       var options = {
           id: 324720100,
