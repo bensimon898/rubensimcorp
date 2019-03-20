@@ -36,6 +36,7 @@ a {
   width: 100%;
   height: 50px; 
   position: fixed;
+  z-index: 1;
 }
 
 #label {
@@ -110,10 +111,6 @@ border-width: 1px 0 0 0;
 }
 
 #section4 {
-  height: 487px;
-  background-position: center;
-  background-size: cover;
-  background-image: url(".jpg");
   border-width: 1px 0 0 0;
   border-style: solid;
 }
@@ -152,18 +149,35 @@ border-width: 1px 0 0 0;
     height: 100%;
 }
 
-#THEBOARD {
-	background: url('boardDesktop.jpg');
-	width: 720px;
-	height: 3247;
-	border-style: solid;
-	border-width: thin;
-    margin: 0px 0px 30px 0px;
+#board {
+	width: 90%;
+	margin: 5%;
+	position: absolute;
+}
+
+.img-wrapper {
 
 }
 
-@media only screen and (max-width: 1000px){
-	#THEBOARD {
-		background: url('boardMobile.jpg');
-		height: 2165px;
-		width: 90%;
+.img-wrapper img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px){
+	#board {
+		width: 720px;
+		margin: 0;
+		right: 50%;
+	}
+	#board>div {
+		right:-50%;
+		position: relative;
+		overflow: hidden;
+	}
+}
+
+#mandatoryImage {
+  height: 550px;
+  background:;
+ 
+}
