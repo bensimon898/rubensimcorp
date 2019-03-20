@@ -1,5 +1,5 @@
 @font-face {
-  font-family: BebasNeue;
+  font-family: Roboto;
   src: url('Roboto-Medium.ttf');
   }
   
@@ -71,7 +71,7 @@ a {
 
 #content {
 color: white;
-font-family: BebasNeue;
+font-family: Roboto;
 font-size: 1.4em;
 border: 0;
 border-style: solid;
