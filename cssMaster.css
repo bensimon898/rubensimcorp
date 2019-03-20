@@ -80,12 +80,16 @@ border-width: 1px 0 0 0;
 
 .sectionContent {
 	width: 90%;
-	height: 100px; 
-	margin: 5% 0 0 5%;
+	margin: 0 0 0 5%;
+}
+
+#content>div {
+	height: 487px;
+	border-width: 1px 0 0 0;
+    border-style: solid;
 }
 
 #section1 {
-  height: 487px;
   background-position: center;
   background-size: cover;
   background-image: url("drone.jpg");
@@ -93,35 +97,26 @@ border-width: 1px 0 0 0;
 }
 
 #section2 {
-  height: 487px;
   background-position: center;
   background-size: cover;
   background-image: url("drone2.jpg");
-  border-width: 1px 0 0 0;
-  border-style: solid;
 }
 
 #section3 {
-  height: 487px;
   background-position: center;
   background-size: cover;
   background-image: url("drone3.jpg");
-  border-width: 1px 0 0 0;
-  border-style: solid;
 }
 
-#section4 {
-  border-width: 1px 0 0 0;
-  border-style: solid;
+#sectionBoard {
+	background: url('section4.png');
 }
 
 #videos {
   height: 400px;
-  border-width: 1px 0 0 0;
   background-size: cover;
   background-image: url("videos.jpg");
   background-position: center;
-  border-style: solid;
   padding: 20px 20px 20px 20px;
 }
 
@@ -163,6 +158,12 @@ border-width: 1px 0 0 0;
   width: 100%;
 }
 
+#board>div {
+	height: 620px;
+	overflow: scroll;
+    border-style: solid;
+	}
+
 @media only screen and (min-width: 800px){
 	#board {
 		width: 720px;
@@ -172,7 +173,7 @@ border-width: 1px 0 0 0;
 	#board>div {
 		right:-50%;
 		position: relative;
-		overflow: hidden;
+		margin: 0px 0px 20px 0px;
 	}
 }
 
