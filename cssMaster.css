@@ -110,10 +110,11 @@ border-width: 1px 0 0 0;
 
 #sectionBoard {
 	background: url('section4.png');
+	height: 790px !important;
 }
 
 #videos {
-  height: 400px;
+  height: 400px !important;
   background-size: cover;
   background-image: url("videos.jpg");
   background-position: center;
