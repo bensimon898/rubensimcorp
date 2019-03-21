@@ -1,0 +1,190 @@
+@font-face {
+  font-family: Roboto;
+  src: url('Roboto-Medium.ttf');
+  }
+  
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: black;
+  margin: 0;
+}
+h1 {
+ line-height: .5;
+ margin-block-end: 0;
+}
+h3 {
+	margin: 0
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#header-container {
+}
+
+#header {
+  background-color: black;
+  padding: 0 10px;
+  width: 100%;
+  height: 50px; 
+  position: fixed;
+  z-index: 1;
+}
+
+#label {
+  display: inline-block;
+
+}
+
+#logo {
+  display: inline-block;
+  background-image: url(resources/logoBig.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 234px;
+}
+  
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 32px;
+  background-image: url(resources/hamburger.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 29px;
+}  
+
+#intro {
+  padding-top: 50;
+  overflow: hidden;
+  max-height: 1000px;
+}
+
+#content {
+color: white;
+font-family: Roboto;
+font-size: 1.4em;
+border: 0;
+border-style: solid;
+border-width: 1px 0 0 0;
+}
+
+.sectionContent {
+	width: 90%;
+	margin: 0 0 0 5%;
+}
+
+#content>div {
+	height: 487px;
+	border-width: 1px 0 0 0;
+    border-style: solid;
+}
+
+#section1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("media/drone.jpg");
+  padding: 20px 20px 20px 20px; 
+}
+
+#section2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("media/drone2.jpg");
+}
+
+#section3 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("media/drone3.jpg");
+}
+
+#sectionBoard {
+	background: url('media/section4.png');
+	height: 790px !important;
+}
+
+#videos {
+  height: 400px !important;
+  background-size: cover;
+  background-image: url("resources/videos.jpg");
+  background-position: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.videoContainer {
+	height: 90px;
+		
+}
+.thumbnail {
+	width: 160px;
+	height: 90px;
+	display: inline-block;
+
+}
+.videoInfo {
+	display: inline-block;
+	height: 90px;
+	width: 154px;
+	line-height: 20px;
+	font-size: 0.8em;
+	position: absolute;
+}
+
+.videoInfo p {
+    margin: 16px 0 0 10px;
+    height: 100%;
+}
+
+#board {
+	width: 90%;
+	margin: 5%;
+	position: absolute;
+}
+
+.img-wrapper {
+
+}
+
+.img-wrapper img {
+  width: 100%;
+}
+
+#board>div {
+	height: 620px;
+	overflow: scroll;
+    border-style: solid;
+	position: absolute;
+	}
+
+@media only screen and (min-width: 800px){
+	#board {
+		width: 720px;
+		margin: 0;
+		right: 50%;
+	}
+	#board>div {
+		right:-50%;
+		position: relative;
+		margin: 0px 0px 20px 0px;
+	}
+}
+
+#mandatoryImage {
+  height: 550px;
+  background:;
+ 
+}
+
+#theBottom {
+	height: 120px !important;
+}
