@@ -7,6 +7,14 @@
     <meta name="description" content="Official website for Ruben Sim.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css" />
+    <script>
+function changeImage()
+{
+var img = document.getElementById("mandatoryImg");
+img.src="styles/media/mandatoryImg.jpg";
+return false;
+}
+</script>
 
 </head>
 
@@ -64,7 +72,7 @@
 
     <div id="content">
         <div id="section1">
-            <div id="sectionContent" style="width: 320px">
+            <div id="sectionContent" style="width: 300px; padding-left: 20px;">
                 <h1>ATTENTION!</h1>
                 <p>This website is currently malfunctioning.</p>
                 <p>High levels of Gamer Energy may emit from your device as a result of unexpected epicness within our systems.</p>
@@ -82,7 +90,7 @@
         </div>
 
         <div id="videos">
-            <div style="width: 320px;">
+            <div>
                 <h3>RECENT VIDEOS</h3>
                 <hr>
                 <a href="https://www.bitchute.com/video/mZcVHN9R6ogQ/">
@@ -142,7 +150,21 @@
                 </div>
             </div>
         </div>
-
+    <div id="mandatorySection">
+      <div class="sectionContent" align=center>
+        <div>
+          <h1>Mandatory Image</h1>
+          <p>The following image is required to be viewed by all visitors of this page once daily by law.
+          This is not a joke or a meme. You will seriously be breaking the law if you do
+          not view the following image.</p>
+        </div>
+      </div>
+      <div id="mandatoryWrapper">
+        <button onclick="changeImage();" style="padding: 0;">
+          <img src="styles/media/spoiler.jpg" id="mandatoryImg"/>
+        </button>
+      </div>
+    </div>
         <div id="theBottom">
             <div class="sectionContent" align="center">
                 <h1>The Bottom</h1>
