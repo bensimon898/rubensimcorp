@@ -1,11 +1,11 @@
 <html>
 <head>
-<link rel="stylesheet" media="all" href="cssMaster.css"/>
+
 <meta charset="UTF-8">
 <meta name="author" content="Ruben Sim">
 <meta name="description" content="Official website for Ruben Sim.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="styles/styles.css"/>
 
 </head>
 
@@ -24,19 +24,21 @@
 
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script>
-    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    var w = Math.max(document.documentElement.clientWidth,
+      window.innerWidth || 0);
+    var h = Math.max(document.documentElement.clientHeight,
+      window.innerHeight || 0);
     if (w < 800) {
 	  var length = 800;
 	  var m = (800 - w) / -2 ;
 	  document.getElementById("intro").style.margin ="0 0 0 " + m.toString() + "px";
-	} else {
-	var length = w;
-	};
-	if (w > 1364){
-	var m = (1364 - w) / -600 ;
-	document.getElementById("intro").style.padding = m.toString() + "px 0 0 0";
-	};
+	  } else {
+  	var length = w;
+  	};
+  	if (w > 1364){
+  	var m = (1364 - w) / -600 ;
+  	document.getElementById("intro").style.padding = m.toString() + "px 0 0 0";
+  	};
       var options = {
           id: 324720100,
 		  width: length,
@@ -58,8 +60,8 @@
       });
   </script>
 	</div>
-	
-	
+
+
 	<div id="content">
 	  <div id="section1">
 	    <div id="sectionContent" style="width: 320px">
@@ -73,24 +75,26 @@
           <p>Ruben Sim Corp.</p>
 		</div>
 	  </div>
-	  
-	  
+
+
 	  <div id="section2">
-	  <!--'Match smoke' by Andrew Magill was used to create this image https://www.flickr.com/photos/amagill/176876227-->
+	  <!--'Match smoke' by Andrew Magill was used to create this image
+    https://www.flickr.com/photos/amagill/176876227-->
 	  </div>
-	  
-	  
+
+
 	  <div id="section3">
 	  </div>
-	  
-	  
+
+
 	  <div id="videos">
 	    <div style="width: 320px;">
 	    <h3>RECENT VIDEOS</h3>
 	    <hr>
 		<a href="https://www.bitchute.com/video/mZcVHN9R6ogQ/">
 	      <div class="videoContainer">
-		    <div class="thumbnail" style="background: url('tn1.jpg');background-size: cover;">
+		    <div class="thumbnail" style="background: url('styles/media/tn1.jpg');
+        background-size: cover;">
 		    </div>
 		    <div class="videoInfo">
 		      <p>Roblox SCP Mobile Task Force Buddies</p>
@@ -98,10 +102,11 @@
 		  </div>
 		</a>
         <hr>
-		
+
 		<a href="https://www.bitchute.com/video/qF84V1zBzcai/">
 	      <div class="videoContainer">
-		    <div class="thumbnail" style="background: url('tn2.jpg');background-size: cover;">
+		    <div class="thumbnail" style="background: url('styles/media/tn2.jpg');
+        background-size: cover;">
 		    </div>
 		    <div class="videoInfo">
 		      <p>SCP-3008 Infinite Roblox IKEA: The Book of Terry</p>
@@ -109,10 +114,11 @@
 		  </div>
 		</a>
 		<hr>
-		
+
 		<a href="https://www.bitchute.com/video/40QM3Q0wfrns/">
 	      <div class="videoContainer">
-		    <div class="thumbnail" style="background: url('tn3.jpg');background-size: cover;">
+		    <div class="thumbnail" style="background: url('styles/media/tn3.jpg');
+        background-size: cover;">
 		    </div>
 		    <div class="videoInfo">
 		      <p>The Current State of Roblox Users &#40;ft. Coolar&#41;</p>
@@ -122,7 +128,7 @@
 		<hr>
 	    </div>
 	  </div>
-	  
+
 		<div id="sectionBoard">
 			<div class="sectionContent" align=center>
 				<h1>Bulletin Board</h1>
@@ -131,20 +137,25 @@
 			<div id="board">
 				<div>
 					<div class="img-wrapper" style="position: absolute;">
-						<img src="boardContents.png" alt="Ruben Sim Corp. Bulletin Board">
+						<img src="styles/media/boardContents.png"
+            alt="Ruben Sim Corp. Bulletin Board">
 					</div>
 					<div class="img-wrapper">
 						<picture>
-							<source media="(min-width: 534px)" srcset="boardDesktop.jpg">
-							<img src="boardMobile.jpg">
+							<source media="(min-width: 534px)"
+              srcset="styles/media/boardDesktop.jpg">
+							<img src="styles/media/boardMobile.jpg">
 						</picture>
 					</div>
 				</div>
 			</div>
 		</div>
-	  
+
 		<div id="theBottom">
-			
+			<div class="sectionContent" align="center">
+			<h1>The Bottom</h1>
+			<p>More content was impossible.</p>
+			</div>
 		</div>
 	</div>
 </body>
