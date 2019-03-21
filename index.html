@@ -1,162 +1,177 @@
 <html>
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="author" content="Ruben Sim">
-<meta name="description" content="Official website for Ruben Sim.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles/styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ruben Sim">
+    <meta name="description" content="Official website for Ruben Sim.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script>
+function changeImage()
+{
+var img = document.getElementById("mandatoryImg");
+img.src="styles/media/mandatoryImg.jpg";
+return false;
+}
+</script>
 
 </head>
 
 <body>
     <header id="header">
-      <div id="header-container">
-        <section id="label">
-          <div id="logo">
-          </div>
-		  <div class="hamburger">
-		  </div>
-        </section>
-      </div>
+        <div id="header-container">
+            <section id="label">
+                <div id="logo">
+                </div>
+                <div class="hamburger">
+                </div>
+            </section>
+        </div>
     </header>
     <div id="intro">
 
-  <script src="https://player.vimeo.com/api/player.js"></script>
-  <script>
-    var w = Math.max(document.documentElement.clientWidth,
-      window.innerWidth || 0);
-    var h = Math.max(document.documentElement.clientHeight,
-      window.innerHeight || 0);
-    if (w < 800) {
-	  var length = 800;
-	  var m = (800 - w) / -2 ;
-	  document.getElementById("intro").style.margin ="0 0 0 " + m.toString() + "px";
-	  } else {
-  	var length = w;
-  	};
-  	if (w > 1364){
-  	var m = (1364 - w) / -600 ;
-  	document.getElementById("intro").style.padding = m.toString() + "px 0 0 0";
-  	};
-      var options = {
-          id: 324720100,
-		  width: length,
-          loop: true,
-		  autoplay: true,
-		  dnt: true,
-		  title: false,
-		  muted: true,
-	   	  byline: false,
-	      background: true,
-      };
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script>
+            var w = Math.max(document.documentElement.clientWidth,
+              window.innerWidth || 0);
+            var h = Math.max(document.documentElement.clientHeight,
+              window.innerHeight || 0);
+            if (w < 800) {
+        	  var length = 800;
+        	  var m = (800 - w) / -2 ;
+        	  document.getElementById("intro").style.margin ="0 0 0 " + m.toString() + "px";
+        	  } else {
+          	var length = w;
+          	};
+          	if (w > 1364){
+          	var m = (1364 - w) / -600 ;
+          	document.getElementById("intro").style.padding = m.toString() + "px 0 0 0";
+          	};
+              var options = {
+                  id: 324720100,
+        		  width: length,
+                  loop: true,
+        		  autoplay: true,
+        		  dnt: true,
+        		  title: false,
+        		  muted: true,
+        	   	  byline: false,
+        	      background: true,
+              };
 
-      var player = new Vimeo.Player('intro', options);
+              var player = new Vimeo.Player('intro', options);
 
-      player.setVolume(0);
+              player.setVolume(0);
 
-      player.on('play', function() {
-          console.log('Played intro video!');
-      });
-  </script>
-	</div>
+              player.on('play', function() {
+                  console.log('Played intro video!');
+              });
+        </script>
+    </div>
 
+    <div id="content">
+        <div id="section1">
+            <div id="sectionContent" style="width: 300px; padding-left: 20px;">
+                <h1>ATTENTION!</h1>
+                <p>This website is currently malfunctioning.</p>
+                <p>High levels of Gamer Energy may emit from your device as a result of unexpected epicness within our systems.</p>
+                <p>For your safety, please consume content as quickly and as often as possible.</p>
+                <p>Ruben Sim Corp.</p>
+            </div>
+        </div>
 
-	<div id="content">
-	  <div id="section1">
-	    <div id="sectionContent" style="width: 320px">
-	      <h1>ATTENTION!</h1>
-	      <p>This website is currently malfunctioning.</p>
-	      <p>High levels of Gamer Energy may emit from
-          your device as a result of unexpected
-          epicness within our systems.</p>
-          <p>For your safety, please consume content
-          as quickly and as often as possible.</p>
-          <p>Ruben Sim Corp.</p>
-		</div>
-	  </div>
-
-
-	  <div id="section2">
-	  <!--'Match smoke' by Andrew Magill was used to create this image
+        <div id="section2">
+            <!--'Match smoke' by Andrew Magill was used to create this image
     https://www.flickr.com/photos/amagill/176876227-->
-	  </div>
+        </div>
 
+        <div id="section3">
+        </div>
 
-	  <div id="section3">
-	  </div>
-
-
-	  <div id="videos">
-	    <div style="width: 320px;">
-	    <h3>RECENT VIDEOS</h3>
-	    <hr>
-		<a href="https://www.bitchute.com/video/mZcVHN9R6ogQ/">
-	      <div class="videoContainer">
-		    <div class="thumbnail" style="background: url('styles/media/tn1.jpg');
+        <div id="videos">
+            <div>
+                <h3>RECENT VIDEOS</h3>
+                <hr>
+                <a href="https://www.bitchute.com/video/mZcVHN9R6ogQ/">
+                    <div class="videoContainer">
+                        <div class="thumbnail" style="background: url('styles/media/tn1.jpg');
         background-size: cover;">
-		    </div>
-		    <div class="videoInfo">
-		      <p>Roblox SCP Mobile Task Force Buddies</p>
-		    </div>
-		  </div>
-		</a>
-        <hr>
+                        </div>
+                        <div class="videoInfo">
+                            <p>Roblox SCP Mobile Task Force Buddies</p>
+                        </div>
+                    </div>
+                </a>
+                <hr>
 
-		<a href="https://www.bitchute.com/video/qF84V1zBzcai/">
-	      <div class="videoContainer">
-		    <div class="thumbnail" style="background: url('styles/media/tn2.jpg');
+                <a href="https://www.bitchute.com/video/qF84V1zBzcai/">
+                    <div class="videoContainer">
+                        <div class="thumbnail" style="background: url('styles/media/tn2.jpg');
         background-size: cover;">
-		    </div>
-		    <div class="videoInfo">
-		      <p>SCP-3008 Infinite Roblox IKEA: The Book of Terry</p>
-		    </div>
-		  </div>
-		</a>
-		<hr>
+                        </div>
+                        <div class="videoInfo">
+                            <p>SCP-3008 Infinite Roblox IKEA: The Book of Terry</p>
+                        </div>
+                    </div>
+                </a>
+                <hr>
 
-		<a href="https://www.bitchute.com/video/40QM3Q0wfrns/">
-	      <div class="videoContainer">
-		    <div class="thumbnail" style="background: url('styles/media/tn3.jpg');
+                <a href="https://www.bitchute.com/video/40QM3Q0wfrns/">
+                    <div class="videoContainer">
+                        <div class="thumbnail" style="background: url('styles/media/tn3.jpg');
         background-size: cover;">
-		    </div>
-		    <div class="videoInfo">
-		      <p>The Current State of Roblox Users &#40;ft. Coolar&#41;</p>
-		    </div>
-		  </div>
-		</a>
-		<hr>
-	    </div>
-	  </div>
+                        </div>
+                        <div class="videoInfo">
+                            <p>The Current State of Roblox Users &#40;ft. Coolar&#41;</p>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+            </div>
+        </div>
 
-		<div id="sectionBoard">
-			<div class="sectionContent" align=center>
-				<h1>Bulletin Board</h1>
-				<p>&#40;updates regularly&#41;</p>
-			</div>
-			<div id="board">
-				<div>
-					<div class="img-wrapper" style="position: absolute;">
-						<img src="styles/media/boardContents.png"
-            alt="Ruben Sim Corp. Bulletin Board">
-					</div>
-					<div class="img-wrapper">
-						<picture>
-							<source media="(min-width: 534px)"
-              srcset="styles/media/boardDesktop.jpg">
-							<img src="styles/media/boardMobile.jpg">
-						</picture>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="theBottom">
-			<div class="sectionContent" align="center">
-			<h1>The Bottom</h1>
-			<p>More content was impossible.</p>
-			</div>
-		</div>
-	</div>
+        <div id="sectionBoard">
+            <div class="sectionContent" align=center>
+                <h1>Bulletin Board</h1>
+                <p>&#40;updates regularly&#41;</p>
+            </div>
+            <div id="board">
+                <div>
+                    <div class="img-wrapper" style="position: absolute;">
+                        <img src="styles/media/boardContents.png" alt="Ruben Sim Corp. Bulletin Board">
+                    </div>
+                    <div class="img-wrapper">
+                        <picture>
+                            <source media="(min-width: 534px)" srcset="styles/media/boardDesktop.jpg">
+                            <img src="styles/media/boardMobile.jpg">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="mandatorySection">
+      <div class="sectionContent" align=center>
+        <div>
+          <h1>Mandatory Image</h1>
+          <p>The following image is required to be viewed by all visitors of this page once daily by law.
+          This is not a joke or a meme. You will seriously be breaking the law if you do
+          not view the following image.</p>
+        </div>
+      </div>
+      <div id="mandatoryWrapper">
+        <button onclick="changeImage();" style="padding: 0;">
+          <img src="styles/media/spoiler.jpg" id="mandatoryImg"/>
+        </button>
+      </div>
+    </div>
+        <div id="theBottom">
+            <div class="sectionContent" align="center">
+                <h1>The Bottom</h1>
+                <p>More content was impossible.</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
