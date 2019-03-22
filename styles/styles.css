@@ -10,10 +10,19 @@
 body {
   width: 100%;
   height: 100%;
-  display: block;
+  overflow: hidden;
   background-color: black;
   margin: 0;
 }
+
+#pageWrapper {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 17px;
+  box-sizing: content-box;
+}
+
 h1 {
  line-height: 1;
  margin-block-end: 0;
@@ -37,7 +46,7 @@ a {
   width: 100%;
   height: 50px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 #label {
@@ -57,7 +66,7 @@ a {
 .hamburger {
   position: absolute;
   top: 0;
-  right: 32px;
+  right: 12px;
   background-image: url(resources/hamburger.png);
   background-repeat: no-repeat;
   height: 50px;
@@ -85,36 +94,34 @@ border-width: 1px 0 0 0;
 }
 
 #content>div {
-	height: 487px;
 	border-width: 1px 0 0 0;
-    border-style: solid;
+  border-style: solid;
 }
 
-#section1 {
+#welcomeSection {
+  height: 460px;
   background-position: center;
   background-size: cover;
   background-image: url("media/drone.jpg");
 }
 
-#section2 {
+#art1 {
+  height: 600px;
   background-position: center;
   background-size: cover;
   background-image: url("media/drone2.jpg");
 }
 
-#section3 {
+#art2 {
+  height: 600px;
   background-position: center;
   background-size: cover;
   background-image: url("media/drone3.jpg");
 }
 
-#sectionBoard {
-	background: url('resources/section4.png');
-	height: 810px !important;
-}
 
 #videos {
-  height: 430px !important;
+  height: 430px;
   background-size: cover;
   background-image: url("resources/videos.jpg");
   background-position: center;
@@ -138,9 +145,9 @@ border-width: 1px 0 0 0;
 .videoInfo {
 	display: inline-block;
 	height: 90px;
-	width: 154px;
-	line-height: 20px;
-	font-size: 0.8em;
+	width: 140px;
+	line-height: 1.2;
+	font-size: 0.7em;
 	position: absolute;
 }
 
@@ -149,75 +156,54 @@ border-width: 1px 0 0 0;
     height: 100%;
 }
 
+#sectionBoard {
+	background: url('resources/section4.png');
+	height: auto;
+  padding-bottom: 24px;
+}
+
 #board {
 	width: 90%;
-	margin: 5%;
-	position: absolute;
+  height: 90vw;
+	margin-left: auto;
+  margin-right: auto;
+  display: block;
+  overflow: scroll;
+  border-style: solid;
 }
 
-.img-wrapper {
+#board>picture {
+	height: 620px;
+  width: 100%;
+	}
 
-}
-
-.img-wrapper img {
+#board img{
   width: 100%;
 }
 
-#board>div {
-	height: 620px;
-	overflow: scroll;
-    border-style: solid;
-	position: absolute;
-	}
-
-@media only screen and (min-width: 800px){
-	#board {
-		width: 720px;
-		margin: 0;
-		right: 50%;
-	}
-	#board>div {
-		right:-50%;
-		position: relative;
-		margin: 0px 0px 20px 0px;
-	}
-}
 
 #mandatorySection{
-  height: auto !important;
+  height: auto;
+  padding-bottom: 24px;
+}
+
+#mandatorySection>.sectionContent {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #mandatoryWrapper {
   width: 90%;
   height: 90vw;
-  margin: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media only screen and (min-width: 612px) {
-  #mandatorySection {
-    height: 780px !important;
-  }
-  #mandatorySection>.sectionContent {
-    position: absolute;
-    right: 50%;
-    width: 750px;
-  }
-  #mandatorySection>.sectionContent>div {
-    right: -50%;
-    position: relative;
-  }
-
-  #mandatoryWrapper {
-    position: absolute;
-    width: 550px;
-    height: 550px;
-    right: 50%;
-    margin: 200px 0 0 0;
-  }
-  #mandatoryWrapper button {
-    right: -50%;
-    position: relative;
-    }
+#mandatoryWrapper button {
+  padding: 0;
+  border-style: none;
 }
 
 #mandatoryImg {
@@ -225,6 +211,79 @@ border-width: 1px 0 0 0;
   width: 100%;
 }
 
+#merchSection {
+  background: url('media/merchBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding-bottom: 24px;
+}
+
+#merchIcon {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90vw;
+  border-style: solid;
+  border-color: black;
+}
+
+#merchIcon img {
+  width: 100%;
+  height: 100%;
+}
+
+.hover {
+width: 100%;
+height: 100%;
+background: white;
+}
+
+#mandatoryWrapper {
+ padding: 0;
+ border-style: solid;
+ border-color: white;
+}
+
+#mandatoryWrapper:hover {
+ border-style: solid;
+ border-color: red;
+}
+
 #theBottom {
 	height: 180px !important;
 }
+
+@media only screen and (min-width: 612px) {
+  #board {
+		width: 550px;
+    height: 550px;
+	}
+
+  #mandatorySection {
+    height: 777px;
+  }
+
+  #mandatorySection>.sectionContent {
+    width: 595px;
+  }
+
+  #mandatoryWrapper {
+    display: block;
+    width: 550px;
+    height: 550px;
+  }
+    #merchSection {
+      height: 720px;
+    }
+
+    #merchIcon {
+      width: 550px;
+      height: 550px ;
+    }
+
+    #merchIcon:hover {
+      border-style: solid;
+      border-color: red;
+    }
+  }

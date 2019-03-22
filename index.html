@@ -19,6 +19,7 @@ return false;
 </head>
 
 <body>
+  <div id="pageWrapper">
     <header id="header">
         <div id="header-container">
             <section id="label">
@@ -71,7 +72,7 @@ return false;
     </div>
 
     <div id="content">
-        <div id="section1">
+        <div id="welcomeSection">
             <div id="sectionContent" style="width: 300px; padding-left: 20px;">
                 <h1>ATTENTION!</h1>
                 <p>This website is currently malfunctioning.</p>
@@ -81,12 +82,12 @@ return false;
             </div>
         </div>
 
-        <div id="section2">
+        <div id="art1">
             <!--'Match smoke' by Andrew Magill was used to create this image
     https://www.flickr.com/photos/amagill/176876227-->
         </div>
 
-        <div id="section3">
+        <div id="art2">
         </div>
 
         <div id="videos">
@@ -137,41 +138,44 @@ return false;
                 <p>&#40;updates regularly&#41;</p>
             </div>
             <div id="board">
-                <div>
-                    <div class="img-wrapper" style="position: absolute;">
-                        <img src="styles/media/boardContents.png" alt="Ruben Sim Corp. Bulletin Board">
-                    </div>
-                    <div class="img-wrapper">
-                        <picture>
-                            <source media="(min-width: 534px)" srcset="styles/media/boardDesktop.jpg">
-                            <img src="styles/media/boardMobile.jpg">
-                        </picture>
-                    </div>
-                </div>
+                <img src="styles/media/board.jpg" alt="Ruben Sim Corp. Bulletin Board">
             </div>
         </div>
     <div id="mandatorySection">
       <div class="sectionContent" align=center>
-        <div>
-          <h1>Mandatory Image</h1>
+          <h1>MANDATORY IMAGE</h1>
           <p>The following image is required to be viewed by all visitors of this page once daily by law.
           This is not a joke or a meme. You will seriously be breaking the law if you do
           not view the following image.</p>
-        </div>
       </div>
       <div id="mandatoryWrapper">
-        <button onclick="changeImage();" style="padding: 0;">
+        <button onclick="changeImage();">
           <img src="styles/media/spoiler.jpg" id="mandatoryImg"/>
         </button>
       </div>
     </div>
+    <div id="merchSection">
+      <div class="sectionContent" align=center>
+        <h1>Merchandise</h1>
+        <p>&#40;Big Cartel Shop&#41;</p>
+      </div>
+
+        <div id="merchIcon">
+                <a href="https://rubensim.bigcartel.com">
+            <img src="styles/media/merchIcon.jpg"/>
+          </a>
+        </div>
+
+    </div>
+
         <div id="theBottom">
-            <div class="sectionContent" align="center">
+            <div class="sectionContent" align=center>
                 <h1>The Bottom</h1>
                 <p>More content was impossible.</p>
             </div>
         </div>
     </div>
+  </div>
 </body>
 
 </html>
