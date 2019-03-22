@@ -225,7 +225,7 @@ border-width: 1px 0 0 0;
   margin-right: auto;
   height: 90vw;
   border-style: solid;
-  border-color: black;
+  border-color: white;
 }
 
 #merchIcon img {
@@ -260,10 +260,6 @@ background: white;
     height: 550px;
 	}
 
-  #mandatorySection {
-    height: 777px;
-  }
-
   #mandatorySection>.sectionContent {
     width: 595px;
   }
@@ -273,9 +269,6 @@ background: white;
     width: 550px;
     height: 550px;
   }
-    #merchSection {
-      height: 720px;
-    }
 
     #merchIcon {
       width: 550px;
