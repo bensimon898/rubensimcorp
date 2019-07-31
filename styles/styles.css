@@ -124,7 +124,11 @@ right: 0px;
   padding-top: 50;
   overflow: hidden;
   max-height: 1000px;
+  background: url('media/introbg.jpg');
+  background-position: center;
 }
+
+
 
 #content {
 color: white;
